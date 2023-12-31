@@ -32,6 +32,7 @@
 
 # files
 .idea/
+.vscode/
 build
 
 # Python
