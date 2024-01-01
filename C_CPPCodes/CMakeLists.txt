@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)   # 声明cmake支持的最低版本
 
-project(log_demo VERSION 0.1.0)   # 项目信息
+project(json_demo VERSION 0.1.0)   # 项目信息
 
 set(CMAKE_CXX_STANDARD 14)	# 将 C++ 标准设置为 C++ 11， google至少 c++14
 # set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -std=c++11 -Wall")
@@ -12,7 +12,7 @@ include_directories(
     # ${PROJECT_SOURCE_DIR}/include/googletest
     # ${PROJECT_SOURCE_DIR}/include/boost_1_84_0
     # ${PROJECT_SOURCE_DIR}/include/sqlite3
-    ${PROJECT_SOURCE_DIR}/include/spdlog
+    # ${PROJECT_SOURCE_DIR}/include/spdlog
 )
 # 向环境中添加库文件搜索路径
 link_directories(
@@ -30,8 +30,9 @@ set(
     # ${PROJECT_SOURCE_DIR}/src/gtest_demo.cpp
     # ${PROJECT_SOURCE_DIR}/src/WSqlite.cpp
     # ${PROJECT_SOURCE_DIR}/src/sqlite_demo.cpp
-    ${PROJECT_SOURCE_DIR}/src/runlog.cpp
-    ${PROJECT_SOURCE_DIR}/src/hrg_log.cpp
+    # ${PROJECT_SOURCE_DIR}/src/runlog.cpp
+    # ${PROJECT_SOURCE_DIR}/src/hrg_log.cpp
+    ${PROJECT_SOURCE_DIR}/src/json_demo.cpp
 
 )
 # 生成测试可执行程序
