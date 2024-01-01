@@ -34,6 +34,7 @@
 .idea/
 .vscode/
 /C_CPPCodes/build/*
+!/C_CPPCodes/build/read.txt
 
 # Python
 .venv
