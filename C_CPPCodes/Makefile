@@ -27,7 +27,7 @@ CFLAGS    = -g -Wall -std=c++17 $(INCLUDE) $(LIBS)
 
 #生成的可执行文件
 # Target=main
-Target=$(RUN_FILE)
+Target=./out/$(RUN_FILE)
 all:$(Target)
 
 #=========================================
