@@ -1,4 +1,0 @@
-[2024-01-01 12:15:19][debug]This is a debug message for multi logger.
-[2024-01-01 12:15:19][info]This is an info message for multi logger.
-[2024-01-01 12:15:19][warning]This is a warn message for multi logger.
-[2024-01-01 12:15:19][error]This is an error message for multi logger.

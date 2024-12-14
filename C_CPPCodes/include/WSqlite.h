@@ -43,4 +43,4 @@ private:
 
 };
 
-#endif
+#endif WSQLITE_H_

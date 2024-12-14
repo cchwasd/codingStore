@@ -1,0 +1,3 @@
+[2024-01-02 23:54:57][info]This is a(n) info message for file logger.
+[2024-01-02 23:54:57][warning]This is a(n) warn message for file logger.
+[2024-01-02 23:54:57][error]This is a(n) error message for file logger.

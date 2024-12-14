@@ -1,4 +1,6 @@
-@echo off setlocal
+@echo off
+
+setlocal
 set "folder=.\build"
 for /D %%i in ("%folder%\*.*") do (
     del /s /q %%i\*
@@ -6,9 +8,11 @@ for /D %%i in ("%folder%\*.*") do (
 )
 del /s /q "%folder%"
 
-setlocal
 
-cd build
-cmake .. -G "MinGW Makefiles"
+
+cmake -S .\ -B .\build  -G "MinGW Makefiles"
+pushd .\build
 mingw32-make
-cd ..
+popd
+
+setlocal

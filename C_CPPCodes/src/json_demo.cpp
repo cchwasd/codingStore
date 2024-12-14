@@ -35,9 +35,13 @@ void func_json01()
         {"list", {1, 0, 2}},
         {"object", {{"currency", "USD"}, {"value", 42.99}}}
     };
-
+    
     std::cout << std::setw(4) << j2 << std::endl;
+    for (auto &x : j2.items()) {
+        std::cout << "key: " << x.key() << ", value: " << x.value() << '\n';
+    }
 
+    std::cout << std::setw(4) << j2.flatten() << std::endl;
     // 显式定义或者表达一些情况
     json empty_array_explicit = json::array();                                    // 初始化一个JSON格式的空数组
     json empty_object_implicit = json({});                                        // 隐式定义一个空对象
@@ -282,22 +286,26 @@ void func_json07()
     //如果需要写到本地，可以使用如下方式：
     std::string path = "resources/json_bin.txt";
     json jb = json::parse(R"({"happy": true, "pi": 3.141, "list": [1,2,3]})");
-    std::ofstream ofs(path, std::ios::out | std::ios::binary);
-    const auto msgpack = nlohmann::json::to_msgpack(jb);
-    ofs.write(reinterpret_cast<const char*>(msgpack.data()), msgpack.size() * sizeof(uint8_t));
-    ofs.close();
+    // std::ofstream ofs(path, std::ios::out | std::ios::binary);
+    // const auto msgpack = nlohmann::json::to_msgpack(jb);
+    // ofs.write(reinterpret_cast<const char*>(msgpack.data()), msgpack.size() * sizeof(uint8_t));
+    // ofs.close();
+    std::ifstream ifs(path, std::ios::in | std::ios::binary);
+    const auto msgpack = nlohmann::json::from_msgpack(ifs);
+    std::cout << msgpack << std::endl;
+    ifs.close();
 
 }
 
 int main(int argc, char *argv[])
 {
-    // func_json01();
+    func_json01();
     // func_json02();
     // func_json03();
     // func_json04();
     // func_json05();
     // func_json06();
-    func_json07();
+    // func_json07();
 
     return 0;
 }
