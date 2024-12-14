@@ -10,7 +10,7 @@ del /s /q "%folder%"
 
 
 
-cmake -S .\ -B .\build  -G "MinGW Makefiles"
+cmake -S .\ -B .\build  -G "MinGW Makefiles"  -LH
 pushd .\build
 mingw32-make
 popd
