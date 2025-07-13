@@ -1,3 +1,0 @@
-C:\MPrograms\C_CPP\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\cmake.exe -E rm -f CMakeFiles\optimized_socket_demo.dir/objects.a
-C:\MPrograms\C_CPP\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\ar.exe qc CMakeFiles\optimized_socket_demo.dir/objects.a @CMakeFiles\optimized_socket_demo.dir\objects1.rsp
-C:\MPrograms\C_CPP\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\c++.exe -Wl,--whole-archive CMakeFiles\optimized_socket_demo.dir/objects.a -Wl,--no-whole-archive -o bin\optimized_socket_demo.exe -Wl,--out-implib,liboptimized_socket_demo.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\optimized_socket_demo.dir\linkLibs.rsp

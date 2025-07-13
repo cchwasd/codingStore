@@ -1,7 +1,0 @@
-C:/MCodes/CursorWork/mtest/cpp_demo/socket_w&l_json/build/CMakeFiles/optimized_socket_demo.dir
-C:/MCodes/CursorWork/mtest/cpp_demo/socket_w&l_json/build/CMakeFiles/edit_cache.dir
-C:/MCodes/CursorWork/mtest/cpp_demo/socket_w&l_json/build/CMakeFiles/rebuild_cache.dir
-C:/MCodes/CursorWork/mtest/cpp_demo/socket_w&l_json/build/CMakeFiles/list_install_components.dir
-C:/MCodes/CursorWork/mtest/cpp_demo/socket_w&l_json/build/CMakeFiles/install.dir
-C:/MCodes/CursorWork/mtest/cpp_demo/socket_w&l_json/build/CMakeFiles/install/local.dir
-C:/MCodes/CursorWork/mtest/cpp_demo/socket_w&l_json/build/CMakeFiles/install/strip.dir
