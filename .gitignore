@@ -35,6 +35,7 @@
 .vscode/
 /C_CPPCodes/build/*
 !/C_CPPCodes/build/tmp.txt
+build/*
 
 # Python
 .venv

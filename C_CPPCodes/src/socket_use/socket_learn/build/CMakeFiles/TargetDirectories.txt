@@ -1,0 +1,3 @@
+C:/MCodes/CursorWork/mtest/cpp_demo/socket_learn/build/CMakeFiles/socket_test.dir
+C:/MCodes/CursorWork/mtest/cpp_demo/socket_learn/build/CMakeFiles/edit_cache.dir
+C:/MCodes/CursorWork/mtest/cpp_demo/socket_learn/build/CMakeFiles/rebuild_cache.dir
