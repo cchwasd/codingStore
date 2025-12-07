@@ -4,6 +4,7 @@
 #include <string>
 #include "mysql.h"
 
+// 参考：https://gitee.com/fingsinz/my-sql-cpp/tree/master/
 struct User {
     int id;
     std::string username;
