@@ -5,7 +5,7 @@
 #include <string>
 #include <vector>
 #include <iostream>
-#include "sqlite3/sqlite3.h"
+#include "sqlite3.h"  // apt-get install libsqlite3-dev
 
 
 using namespace std;
@@ -43,4 +43,4 @@ private:
 
 };
 
-#endif WSQLITE_H_
+#endif //WSQLITE_H_

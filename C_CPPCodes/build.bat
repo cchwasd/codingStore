@@ -10,11 +10,11 @@ del /s /q "%folder%"
 
 
 
-cmake -S .\ -B .\build  -G "MinGW Makefiles"  -LH
-::pushd .\build
+cmake -S . -B build  -G "MinGW Makefiles"  -LH
+::pushd build
 ::mingw32-make
 ::popd
 
-mingw32-make -C .\build
-
+@REM mingw32-make -C .\build
+cmake --build build
 setlocal
