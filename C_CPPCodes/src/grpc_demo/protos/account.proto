@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package example;
+
+message LoginRequest {
+    string username = 1;
+    string password = 2;
+}
+
+message LoginResponse {
+    string message = 1;
+    bool success = 2;
+}
+
+service LoginService {
+    rpc Login(LoginRequest) returns (LoginResponse);
+}
+
+// protoc --grpc_out ./out --cpp_out ./out -I protos --plugin=protoc-gen-grpc="$(which grpc_cpp_plugin)" account.proto
+// C:\MPrograms\C_CPP\grpc\bin\protoc --grpc_out ./protos_out --cpp_out ./protos_out -I ./ --plugin=protoc-gen-grpc="C:\MPrograms\C_CPP\grpc\bin\grpc_cpp_plugin.exe" account.proto
